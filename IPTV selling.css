@@ -1,0 +1,401 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e94560;
+}
+
+.header-cta .btn {
+  background: #e94560;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.header-cta .btn:hover {
+  background: #d43f57;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: #fff;
+  padding: 150px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 46, 0.7);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 56px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  background: #e94560;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #d43f57;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #1a1a2e;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  background: #1a1a2e;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+}
+
+.plan h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.plan .price {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan ul li {
+  margin: 15px 0;
+}
+
+.popular {
+  background: linear-gradient(135deg, #e94560, #ff6f61);
+}
+
+.popular-badge {
+  background: #fff;
+  color: #e94560;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.features h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 40px;
+  color: #e94560;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.contact h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #500a16;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #430812;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #51141e;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* WhatsApp Icon */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #128c7e;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #511a23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #d43f57;
+}
+/* Scrolling Images Section */
+.scrolling-images {
+  background: #1a1a2e;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-content {
+  display: flex;
+  animation: scroll 20s linear infinite alternate; /* Add 'alternate' for back-and-forth motion */
+}
+
+.scrolling-content img {
+
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
